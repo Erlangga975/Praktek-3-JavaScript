@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<script language="Javascript">
+
+	// memanggil function untuk menentukan bilangan ganjil atau genap
+	function test()
+	{
+		//deklarasi dan memberi nilai variable
+		var val1=document.kirim. T1. value
+		if (val1%2==0)
+
+		//selection untuk menentukan bilangan ganjil atau genap
+		document.kirim.T2. value="bilangan genap"
+		else
+		document.kirim.T2. value="bilangan ganjil"
+	}
+</script>
+<body>
+	<form method="POST" name="kirim">
+
+		<!-- menginput text box -->
+        <p>Bil <input type="text" name="T1" size="20"> 
+        Merupakan Bil <input type="text" name="T2" size="20"></p>
+        
+        <!-- menginput button untuk menjalankan function -->
+        <p><input type="button" value="Tebak" name="B1" onclick=test()></p>
+	</form>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mengkonversi Nilai Angka Menjadi Nilai Huruf</title>
+</head>
+<body>
+    <form name="Angka">
+    <caption><h1>Mengkonversi Nilai Angka Menjadi Nilai Huruf</h1></caption>
+
+    <!-- Menginput textbox untuk mendapat nilai -->
+    <p>Masukkan Nilai Angka : <input type="text" name="nilai" size="20px"></p>
+    <p>Nilai Anda : <input type="text" name="hasil" size="20px"></p>
+
+    <!-- Menginput button untuk mengeksekusi function -->
+    <input type="button" value="Hitung" name="hitung" onclick=ceknilai()>
+    <input type="reset" name="re">
+    </form>
+</body>
+</html>
+<script language="Javascript">
+
+        // memanggil function untuk mencek nilai
+        function ceknilai() {
+            
+            // deklarasi dan input nilai variabel
+            var val1 = document.Angka.nilai.value
+
+            // seleksi nilai menggunakan if else
+            if (val1<=40) 
+                document.Angka.hasil.value="E"//output:E 
+            else if (val1<=55)  
+                document.Angka.hasil.value="D"//output:D
+            else if (val1<=60) 
+                document.Angka.hasil.value="C"//output:C
+            else if (val1<=65) 
+                document.Angka.hasil.value="BC"//output:BC
+            else if (val1<=70) 
+                document.Angka.hasil.value="B"//output:B
+            else if (val1<=80) 
+                document.Angka.hasil.value="AB"//output:AB
+            else if (val1<=100) 
+                document.Angka.hasil.value="A"//output:A
+            else
+            document.Angka.hasil.value="Kosong"//output:Kosong
+        } 
+    </script>
